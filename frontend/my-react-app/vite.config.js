@@ -9,6 +9,7 @@ export default defineConfig({
         target: "http://localhost:8000",
         changeOrigin: true,
         secure: false,
+        base: "/web1.github.io/",
       },
     },
   },
