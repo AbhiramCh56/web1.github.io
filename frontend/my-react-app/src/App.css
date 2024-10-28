@@ -1,0 +1,296 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Poppins:wght@100;300;400;600;700&family=Montserrat:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url(https://db.onlinewebfonts.com/c/1b691f4637dd58c971711cd611f5f6bd?family=Hurme+Geometric+Sans+3+W03+Bold);
+@import url("https://fonts.cdnfonts.com/css/mondapick");
+@import url("https://fonts.cdnfonts.com/css/cocogoose-pro");
+
+body {
+  background-color: #000000;
+  margin: 0;
+  /* font-family: "Inria Sans", sans-serif; */
+  color: #ffffff;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  /* Fade transition */
+  /* Default opacity */
+}
+
+.header {
+  z-index: 1;
+  position: relative; /* Ensure header is on top */
+}
+
+.main-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 100px; /* Space for header and logo */
+  text-align: left; /* Left align text */
+  margin-left: 20px;
+}
+
+/* .background-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  background-image: url("./o_2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: rotate 20s linear infinite;
+} */
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.main-text,
+.main-under {
+  margin: 0 auto; /* Center text horizontally */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Cocogoose Pro", sans-serif;
+  font-weight: 300;
+}
+
+.main-text {
+  font-size: 2.5em;
+  color: #ffffff;
+  transition: opacity 0.5s ease-out; /* Smooth transition for opacity */
+  word-spacing: -4px;
+}
+
+.main-text p {
+  margin: 1px 0;
+  /* font-weight: lighter; */
+}
+
+.main-under {
+  font-family: "Roboto", sans-serif; /* Use Roboto for secondary text */
+  /* font-weight: 300; */
+  color: #ffffff;
+  transition: opacity 0.5s ease-out; /* Smooth transition for opacity */
+  font-size: 20px;
+  font-weight: 400;
+  margin: 1px auto;
+}
+
+.main-under p {
+  margin: 1px;
+  margin-top: 10px;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #209451;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 2px;
+}
+
+.button:hover {
+  background-color: #197c3aa2;
+  transform: scale(1.05);
+  cursor: pointer;
+  border: 2px solid #1f9446;
+  transition: 0.07s ease-in-out;
+}
+
+/* Tooltip styles */
+.tooltip {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #197c3a;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the text */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  color: #197c3abd;
+}
+
+/* Parallax effect */
+.parallax {
+  /* background-image: url("./o_2.png"); */
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 15px; /* Slightly smaller font size for medium screens */
+  }
+
+  .main-text {
+    font-size: 2em; /* Adjust text size */
+  }
+
+  .main-under {
+    font-size: 18px; /* Adjust text size */
+  }
+
+  .button {
+    padding: 8px 16px; /* Smaller button padding */
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+
+  .main-text {
+    font-size: 1.8em; /* Adjust text size */
+  }
+
+  .main-under {
+    font-size: 16px; /* Adjust text size */
+  }
+
+  .button {
+    padding: 6px 12px; /* Even smaller button padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack header items */
+  }
+
+  .main-content {
+    padding: 20px; /* More padding on small screens */
+    margin-left: 0; /* Center content */
+  }
+
+  .main-text {
+    font-size: 1.5em; /* Adjust text size */
+  }
+
+  .main-under {
+    font-size: 14px; /* Adjust text size */
+  }
+}
+
+@media (max-width: 576px) {
+  .main-text {
+    font-size: 1.2em; /* Further adjust text size */
+  }
+
+  .main-under {
+    font-size: 12px; /* Further adjust text size */
+  }
+
+  .button {
+    width: 100%; /* Full-width buttons */
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.card {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.cardcomp {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 400%;
+  max-height: fit-content;
+}
+
+.lop {
+  display: flex;
+  justify-content: space-evenly;
+  width: 2000px;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.additional-text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 100px;
+  margin-left: 20px;
+
+  display: flex;
+  text-align: left;
+}
+
+.additional-text p {
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.additional-text div {
+  font-weight: lighter;
+}

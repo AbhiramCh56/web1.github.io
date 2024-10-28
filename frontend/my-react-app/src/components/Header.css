@@ -1,0 +1,114 @@
+/* src/components/Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e4e4e6b;
+  padding: 20px;
+  position: fixed;
+  width: 97.9%;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header:hover {
+  background-color: #4e4e4e6b;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  color: #1c7c44;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative; /* Ensure the underline pseudo-element is positioned relative to the link */
+  padding: 5px; /* Add padding to create space for the underline */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Space between text and underline */
+  left: 0;
+  width: 0;
+  height: 2px; /* Underline thickness */
+  background-color: #1c7c44; /* Underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #1c7c44;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #282c34;
+  border: 1px solid #007acc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+  background-color: #007acc;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #007acc;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+  width: 200px;
+  outline: none;
+}

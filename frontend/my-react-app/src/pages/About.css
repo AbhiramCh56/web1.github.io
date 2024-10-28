@@ -1,0 +1,117 @@
+/* src/pages/About.css */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Poppins:wght@100;300;400;600;700&family=Montserrat:wght@100;300;400;500;700&display=swap");
+
+.about-page {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .background-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  background-image: url("./o_2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+} */
+
+.about-content {
+  position: relative;
+  z-index: 1; /* Ensure content is on top of background */
+  padding: 20px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+.inner-con {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 15px; /* Slightly smaller font size for medium screens */
+  }
+
+  .main-text {
+    font-size: 2em; /* Adjust text size */
+  }
+
+  .main-under {
+    font-size: 18px; /* Adjust text size */
+  }
+
+  .button {
+    padding: 8px 16px; /* Smaller button padding */
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+
+  .main-text {
+    font-size: 1.8em; /* Adjust text size */
+  }
+
+  .main-under {
+    font-size: 16px; /* Adjust text size */
+  }
+
+  .button {
+    padding: 6px 12px; /* Even smaller button padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack header items */
+  }
+
+  .main-content {
+    padding: 20px; /* More padding on small screens */
+    margin-left: 0; /* Center content */
+  }
+
+  .main-text {
+    font-size: 1.5em; /* Adjust text size */
+  }
+
+  .main-under {
+    font-size: 14px; /* Adjust text size */
+  }
+}
+
+h1 {
+  text-align: center;
+}
