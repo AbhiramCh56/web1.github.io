@@ -8,11 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://AbhiramCh56.github.io/web1.github.io",
-
   "dependencies": {
     "@formfacade/embed-react": "^1.0.4",
     "aos": "^2.3.4",
