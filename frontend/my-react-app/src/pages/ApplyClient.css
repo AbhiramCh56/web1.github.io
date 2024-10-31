@@ -110,3 +110,21 @@
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .form-container {
+    width: auto;
+  }
+  .flex-container {
+    height: auto;
+  }
+  .form-group {
+    height: auto;
+  }
+  .form-group input {
+    width: auto;
+  }
+  .form-group label {
+    font-size: smaller;
+  }
+}

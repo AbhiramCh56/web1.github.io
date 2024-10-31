@@ -1,6 +1,6 @@
 // src/components/Card.jsx
 
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import "./Card.css"; // Ensure this file exists and contains the required styles
 
 const Card = ({ title, content }) => {

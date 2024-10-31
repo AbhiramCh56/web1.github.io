@@ -1,6 +1,6 @@
 // src/App.jsx
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -52,6 +52,7 @@ function App() {
           <div className="main-content">
             <Routes location={location}>
               <Route path="/" element={<Home />} />
+              <Route path="/Web" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
@@ -88,23 +89,24 @@ function Home() {
           <button className="button">Apply as a Client</button>
         </Link>
       </Tooltip>
+      <div className="fot">
+        <div className="additional-text">
+          <p>3.4M+ </p>
+          <div>
+            Average <br />
+            Engagement
+          </div>
 
-      <div className="additional-text">
-        <p>3.4M+ </p>
-        <div>
-          Average <br />
-          Engagement
-        </div>
-
-        <p>| 4.2M+</p>
-        <div>
-          Average <br />
-          Views
-        </div>
-        <p>| 120-140K </p>
-        <div>
-          Average <br />
-          Story Views
+          <p>| 4.2M+</p>
+          <div>
+            Average <br />
+            Views
+          </div>
+          <p>| 120-140K </p>
+          <div>
+            Average <br />
+            Story Views
+          </div>
         </div>
       </div>
     </main>

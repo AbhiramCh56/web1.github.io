@@ -1,6 +1,6 @@
 // src/pages/ApplyClient.jsx
 
-import React, { useState } from "react";
+import { useState } from "react";
 import "./ApplyClient.css";
 import FormfacadeEmbed from "@formfacade/embed-react";
 

@@ -231,6 +231,80 @@ body {
   }
 }
 
+@media (max-width: 750px) {
+  .additional-text {
+    width: 90%;
+  }
+  .additional-text div {
+    font-size: xx-small;
+  }
+}
+
+@media (max-width: 610px) {
+  .additional-text {
+    max-width: 70%;
+  }
+  .additional-text {
+    font-size: 1px;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 400px) {
+  .main-content .fot {
+    display: flex;
+  }
+  .main-content .fot div {
+    font-size: 5px;
+  }
+  .main-content .fot p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .main-content .fot div {
+    font-size: 10px;
+  }
+  .main-content .fot p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 611px) {
+  .main-content .fot div {
+    font-size: 10px;
+  }
+  .main-content .fot p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 536px) {
+  .main-content .fot div {
+    font-size: 10px;
+  }
+  .main-content .fot p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 490px) {
+  .main-content .fot div {
+    font-size: 5px;
+  }
+  .main-content .fot p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 490px) {
+  .main-content .fot div {
+    font-size: 5px;
+  }
+  .main-content .fot p {
+    font-size: 8px;
+  }
+}
+
 .fade-enter {
   opacity: 0;
 }
@@ -267,11 +341,11 @@ body {
   width: 2000px;
 }
 
-.foot {
+/* .foot {
   position: fixed;
   bottom: 0;
   left: 0;
-}
+} */
 
 .additional-text {
   position: fixed;
@@ -279,7 +353,7 @@ body {
   left: 0;
   margin-bottom: 100px;
   margin-left: 20px;
-
+  width: 100%;
   display: flex;
   text-align: left;
 }
@@ -293,4 +367,19 @@ body {
 
 .additional-text div {
   font-weight: lighter;
+}
+
+@media (max-width: 555px) {
+  .additional-text {
+    margin-top: 100px;
+    width: auto;
+    position: static;
+  }
+}
+
+@media (min-width: 1020px) {
+  .additional-text {
+    margin-top: 10px;
+    width: auto;
+  }
 }

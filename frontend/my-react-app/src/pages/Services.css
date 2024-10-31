@@ -52,3 +52,15 @@
   font-size: 1.5em;
   line-height: 1.6;
 }
+
+@media (min-width: 414px) {
+  .services-page {
+    font-size: smaller;
+  }
+}
+
+@media (min-width: 375px) {
+  .services-page {
+    font-size: x-small;
+  }
+}

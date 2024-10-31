@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = ({ title, content, titleLevel }) => {
   const TitleTag = titleLevel;
 

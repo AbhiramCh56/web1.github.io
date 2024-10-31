@@ -1,4 +1,3 @@
-import React from "react";
 // import './Services.css'; // Optional: Create and import a CSS file for styling
 
 function Services() {

@@ -115,3 +115,24 @@
 h1 {
   text-align: center;
 }
+
+@media (max-width: 994px) {
+  body {
+    height: 100vh;
+  }
+  .about-page {
+    height: 125vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-page {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 300px) {
+  .about-page {
+    margin-top: 0px;
+  }
+}

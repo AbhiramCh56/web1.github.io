@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[dev]
+  command = "vite" # This is optional and can be used for local development
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,6 +1,5 @@
 // src/components/Footer.jsx
 
-import React from "react";
 import "./Footer.css";
 
 const Footer = ({ scrollToOwners }) => {
